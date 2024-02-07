@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+nav {
+    color: #262626;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    height: 54px;
+    max-width: 100%
+}
+.nav-space {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    max-width: 100%;
+    color: #262626;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.microsoft-logo img {
+    max-width: none;
+    width: 108px;
+    cursor: pointer;
+}
+
+.left-side-nav {
+    display: flex;
+}
+
+.right-side-nav {
+    position: relative ;
+    align-items: flex-end;
+    align-content: flex-end;
+    display: flex;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600');
+    background-size: 1462px 457px;
+    background-position: top;
+    display: flex;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 1px;
+    word-wrap: break-word;
+    background-clip: border-box;
+    cursor: pointer;
+}
+
+.overlay-text {
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    padding: 48px;
+    border-radius: 10px;
+    max-width: 548px;
+    max-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container .overlay-text h1 {
+    font-size: 2.3125rem;
+    margin-bottom: 1.25rem;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.container .overlay-text .btn{
+    background-color: #0067B8;
+    color: #ffffff;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: .625rem .75rem;
+    width: 240px;
+    height: 39px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    font-weight: 600;
+    border: .125rem solid transparent;
+    position: relative;
+    border-radius: .125rem;
+    font-size: 15.5px;
+    line-height: 1;
+}
