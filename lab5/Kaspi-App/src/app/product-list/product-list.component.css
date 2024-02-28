@@ -1,0 +1,69 @@
+/* Общие стили для продуктов */
+div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Изображение продукта */
+img {
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Заголовок продукта */
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Описание продукта */
+p {
+    margin-bottom: 5px;
+}
+
+/* Рейтинг продукта */
+p * {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Кнопки и ссылки */
+button, a {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover, a:hover {
+    background-color: #2980b9;
+}
+
+/* Стиль для кнопки Whatsapp */
+.whatsapp {
+    background-color: #25D366;
+}
+
+/* Убрать стандартное подчеркивание у ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Добавить стили для всплывающего окна уведомлений */
+.alert {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}

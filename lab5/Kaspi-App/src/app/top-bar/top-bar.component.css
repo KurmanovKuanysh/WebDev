@@ -1,0 +1,19 @@
+*{
+    justify-content: space-between;
+}
+nav{
+    width: 1000px;
+    justify-content: space-around;
+    display: flex;
+}
+button{
+    margin: 10px;
+}
+a{
+
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
