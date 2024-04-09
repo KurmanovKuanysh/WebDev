@@ -8,10 +8,11 @@ import {Router} from "@angular/router";
 })
 export class TopBarComponent {
   @Output() categorySelected = new EventEmitter<string>();
-  categories: string[] = ['furniture', 'milk']; // Fix the property name here
+  categories: string[] = ['furniture', 'clothes', 'sport','gadget']; // Fix the property name here
 
   constructor(private router: Router) {}
   navigateToCategory(category: string) {
     this.categorySelected.emit(category);
   }
+
 }

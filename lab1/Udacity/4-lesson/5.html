@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-card {
+            background: #f0f0f0;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-section {
+            display:flex;
+            align-items: center;
+        }
+
+
+        .profile-info {
+            width: 70px;
+            flex-grow: 1;
+            align-content: center;
+            text-align: center;
+        }
+        h2{
+            margin:0px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .profile-action {
+            background: #4CAF50;
+            color: white;
+            border:none;
+            padding: 8px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        p{
+           color:lightyellow;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="top-section">
+        <div class="profile-info">
+            <h2>Kuanysh Kurmanov</h2>
+            <p>MCG vice-CEO</p>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="profile-action">Message</button>
+        <button class="profile-action">Contact</button>
+    </div>
+</div>
+
+</body>
+</html>

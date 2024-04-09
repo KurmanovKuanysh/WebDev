@@ -9,8 +9,7 @@ import {Router} from "@angular/router";
 export class AppComponent {
   constructor(private router: Router) {}
   onCategorySelected(category: string){
-    alert("Selected")
-  }
+    this.router.navigate(['/products', category]);  }
 }
 
 

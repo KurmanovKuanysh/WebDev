@@ -54,6 +54,7 @@ body{
     max-width: 350px;
 }
 
+
 .col-form{
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(219, 219, 219);
@@ -89,7 +90,7 @@ body{
 }
 
 .col-form .input-box input:focus{
-    border-color: black;
+    border-color: #778899;
     box-shadow:  rgba(0, 0, 255, 1);
 }
 
@@ -104,10 +105,7 @@ body{
     border-radius: 7px;
     cursor: pointer;
 }
-.btn-login:disabled{
-    background: #B2DFFC;
-    cursor: default;
-}
+
 
 .logo-instagram{
     margin: 20px 0 30px 0;
@@ -130,10 +128,9 @@ body{
 }
 
 .or{
-    margin: 1rem 0 1.6rem;
+    margin: 16px 0 26px;
     font-size: 13px;
     color: #737373;
-    text-transform: uppercase;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -186,6 +183,12 @@ body{
 .text-format{
     font-size: 13.5px;
     margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.text-format1{
+    margin-left: 100px;
 }
 
 .logo-instagram{

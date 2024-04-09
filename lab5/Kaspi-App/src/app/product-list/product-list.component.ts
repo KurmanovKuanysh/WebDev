@@ -1,28 +1,21 @@
-// Импортируем модуль Component из Angular Core
 import { Component , OnInit} from '@angular/core';
-
-// Импортируем массив products из файла products
 import { products } from '../products';
 
-// Импортируем интерфейс Product из файла products
 import { Product } from '../products';
 
 import {ActivatedRoute} from "@angular/router";
 
 
-// Определяем метаданные компонента с помощью декоратора @Component
 @Component({
-  // Селектор, по которому можно использовать компонент в HTML
   selector: 'app-product-list',
 
-  // Путь к файлу с HTML-разметкой компонента
   templateUrl: './product-list.component.html',
 
-  // Путь к файлу с CSS-стилями компонента
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit{
   products = [...products];
+  selectedCategory: string | null = null;
   category: string ='';
 
   constructor(private route: ActivatedRoute) {}
@@ -33,6 +26,16 @@ export class ProductListComponent implements OnInit{
       this.filterProductsByCategory();
     });
   }
+
+  loadProducts() {
+    // Load products based on the selected category or load all products if no category is specified
+    if (this.selectedCategory) {
+      this.products = products.filter(product => product.category === this.selectedCategory);
+    } else {
+      this.products = products;
+    }
+  }
+
   filterProductsByCategory() {
     // Фильтруйте продукты по текущей категории
     this.products = products.filter(product => product.category === this.category);
@@ -43,12 +46,8 @@ export class ProductListComponent implements OnInit{
     window.open(telegramUrl, '_blank');
   }
 
-  // Метод для шаринга продукта в WhatsApp
   shareWhatsapp(product: Product) {
-    // Формируем URL для шаринга в WhatsApp
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent('Check out this product!')}%20${encodeURIComponent(product.link)}`;
-    // Открываем новое окно с сформированным URL
-
 
     window.open(whatsappUrl, '_blank');
   }
